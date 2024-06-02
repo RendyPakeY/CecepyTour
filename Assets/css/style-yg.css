@@ -186,6 +186,9 @@ i{
 nav .close{
     display: none;
 }
+nav .bar{
+    display: none;
+}
 /* End All Tabs */
 .upper{
     display: flex;

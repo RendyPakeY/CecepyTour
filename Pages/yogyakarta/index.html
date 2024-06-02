@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Assets/css/style-yg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../Assets/img/logo.png">
+    <title>CECEPY TOUR</title>
+</head>
+<body>
+    <header>
+        <div class="nav-container" id="nav-con">
+            <nav>
+                <a href="#">
+                    <div class="logo">
+                        <img src="../../Assets/img/logo.png" alt="Logo" class="logo-img">
+                        <h1 class="logo-text1">CECEPY</h1>
+                        <h1 class="logo-text2">TOUR</h1>
+                    </div>
+                </a>
+                <i class="fa-solid fa-bars bar fa-lg" onclick="barOP()"></i>
+                <ul class="menu">
+                    <i class="fa-solid fa-xmark fa-xl close" onclick="barCP()"></i>
+                    <li><a href="../../" class="a-menu" id="a-menu">Home</a></li>
+                    <li><a href="../../#about" class="a-menu" id="a-menu">About</a></li>
+                    <li class="me"><a href="#null" class="drop" id="a-menu">Destination<i>▼</i></a>
+                        <div class="dropdown" id="drop">
+                            <ul>
+                                <li><a href="../bandung/">Bandung</a></li>
+                                <li><a href="../bali/">Bali</a></li>
+                                <li><a href="#">Yogyakarta</a></li>
+                            </ul>
+                        </div>
+    
+                    </li>
+                    <li class="li-login"><a href="#contact" class="login">Contact</a></li>
+                </ul>
+            </nav>
+           </div>
+           <div class="upper">
+            <h1 class="cover">Yogyakarta</h1>
+           </div>
+        </header>
+        <main>
+            <section class="about">
+                <div class="content">
+                    <h1>Tentang Yogyakarta</h1>
+                    <p>Yogyakarta terkenal dengan kekayaan warisan budayanya, terutama seni dan tradisi Jawa. Salah satu atraksi terkenal adalah Keraton Yogyakarta, istana tradisional yang masih menjadi tempat tinggal sultan dan keluarganya. Di sekitar Keraton, wisatawan dapat menemukan berbagai museum dan galeri seni yang memamerkan karya seni Jawa klasik dan kontemporer. <br>
+                        Selain itu, Yogyakarta juga dikenal dengan candi-candi bersejarahnya yang spektakuler, seperti Candi Borobudur dan Candi Prambanan. Candi Borobudur adalah salah satu situs Buddha terbesar di dunia, sementara Candi Prambanan adalah kompleks candi Hindu yang megah.</p>
+                </div>
+                <img src="../../Assets/img/yg-img.jpg" alt="">
+            </section>
+            <section class="gallery">
+                <h1>Gallery</h1>
+                <div class="content-gallery">
+                    <div class="slide">
+                        <img src="../../Assets/img/gallery-yogyakarta/3.jpg" alt="">
+                        <img src="../../Assets/img/gallery-yogyakarta/1.jpg" alt="">    
+                        <img src="../../Assets/img/gallery-yogyakarta/4.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../../Assets/img/gallery-yogyakarta/2.jpg" alt="">
+                        <img src="../../Assets/img/gallery-yogyakarta/6.jpg" alt="">
+                        <img src="../../Assets/img/gallery-yogyakarta/5.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../../Assets/img/gallery-yogyakarta/7.jpg" alt="">
+                        <img src="../../Assets/img/gallery-yogyakarta/8.jpg" alt="">
+                        <img src="../../Assets/img/gallery-yogyakarta/9.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+            <footer>
+                <h1>Our Contact</h1>
+                <div class="contact" id="contact">
+                    <a href="https://www.instagram.com/TripCecepy/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="https://wa.me/1234567890"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=hello@TripCantikCecepy.com&body=Halo+saya+ingin+berbicara+langsung+dengan+admin&tf=cm"><i class="fa-regular fa-envelope fa-xl"></i></a>
+                    <a href="https://www.google.com/maps/place/Jl.Phh.Mustopha+No.26+Bandung/@-6.8981072,107.63061,17z/data=!3m1!4b1!4m6!3m5!1s0x2e68e7baee821dab:0x3b306bdeb1f6fc09!8m2!3d-6.8981125!4d107.6352234!16s%2Fg%2F11f9j121g9?entry=ttu" class="imgc"><i class="fa-solid fa-location-dot fa-lg"></i></a>
+                </div>
+                <hr>
+                <p>© Copyright 2024-2026. All Right Reversed</p>
+            </footer>
+            <script src="https://kit.fontawesome.com/cc079fac56.js" crossorigin="anonymous"></script>
+            <script>
+                window.addEventListener("scroll", function(){
+                    var nav_con = document.getElementById("nav-con");
+                    var a = document.getElementById("a-menu");
+                    var nav = document.querySelector("nav");
+                    var drop = document.getElementById("drop");
+                    nav_con.classList.toggle("sticky", window.scrollY > 0);
+                    nav.classList.toggle("nav-sticky", window.scrollY > 0);
+                    drop.classList.toggle("stick-drop", window.scrollY > 0);
+                    a.classList.toggle("a-sticky", window.scrollY > 0);
+                });
+                var bar = document.getElementById("bar");
+                function barOP(){
+                    bar.classList.add("barOP");
+                }
+                function barCP(){
+                    bar.classList.remove("barOP")
+                }
+            </script>
+        </body>
+        </html>

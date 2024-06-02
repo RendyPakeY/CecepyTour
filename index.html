@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/style-home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Assets/img/logo.png">
+    <title>CECEPY TOUR</title>
+</head>
+<body>
+    <header id="home">
+        <div class="nav-container" id="nav-con">
+            <nav  id="bar">
+                <a href="#">
+                    <div class="logo">
+                        <img src="Assets/img/logo.png" alt="Logo" class="logo-img">
+                        <h1 class="logo-text1">CECEPY</h1>
+                        <h1 class="logo-text2">TOUR</h1>
+                    </div>
+                </a>
+                <i class="fa-solid fa-bars bar fa-lg" onclick="barOP()"></i>                
+                <ul class="menu">
+                    <i class="fa-solid fa-xmark fa-xl close" onclick="barCP()"></i>                                
+                    <li><a href="#" class="a-menu" id="a-menu">Home</a></li>
+                    <li><a href="#about" class="a-menu" id="a-menu">About</a></li>
+                    <li class="me"><a href="#null" class="drop" id="a-menu">Destination<i>▼</i></a>
+                        <div class="dropdown" id="drop">
+                            <ul>
+                                <li><a href="Pages/bandung/">Bandung</a></li>
+                                <li><a href="Pages/bali/">Bali</a></li>
+                                <li><a href="Pages/yogyakarta/">Yogyakarta</a></li>
+                            </ul>
+                        </div>
+    
+                    </li>
+                    <li class="li-login"><a href="#contact" class="login">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="home">
+            <h1>Touring bersama Cecepy</h1><br>
+            <p>Temukan keindahan Indonesia bersama kami. Hadirkan petualangan tak terlupakan di setiap langkah perjalanan Anda. Cecepy Tour didukung oleh tim dan driver yang profesional, berpengalaman, serta keramahan khas warga Indonesia.</p><br>
+            <a href="#contact">Hubungi Kami</a>
+        </div>
+        <div id="about" class="blank-about"></div>
+    </header>
+    <main>
+        <section class="about">
+            <img src="Assets/img/abt-img.jpg" alt="">
+            <div class="content">
+                <h1>About Us</h1>
+                <p>Cecepy Tour adalah perusahaan yang berdedikasi dalam menyediakan pengalaman wisata yang tak terlupakan bagi pelanggannya. Dengan komitmen untuk memberikan layanan terbaik, kami menawarkan berbagai paket tur yang dirancang untuk memenuhi berbagai kebutuhan dan minat wisatawan. 
+                    <br>Tim kami terdiri dari profesional yang berpengalaman dalam industri pariwisata, siap membantu Anda merencanakan perjalanan impian Anda mulai dari destinasi yang menarik hingga akomodasi yang nyaman. Dengan layanan yang ramah dan harga yang kompetitif, Cecepy Tour siap menjadi mitra perjalanan Anda untuk menjelajahi dunia dengan gembira dan tanpa khawatir.
+                    </p>
+            </div>
+        </section>
+        <section class="harga">
+            <h1>Detail Harga</h1>
+            <div class="harga-container">
+                <div class="value-container">
+                     <img src="Assets/img/gallery-bandung/7.jpg" alt="bandung">
+                     <div class="padding">
+                        <h1>Bandung</h1>
+                        <p>Bandung, kota yang penuh dengan pesona dan sejarah, memiliki banyak daerah yang menarik untuk dijelajahi, salah satunya adalah kawasan Braga. Jalan Braga adalah simbol kemegahan masa lampau yang berpadu dengan sentuhan modern <a href="Pages/bandung/">...Lebih lanjut</a></p>
+                        <div>
+                            <h1>Rp 2.000.000</h1>
+                            <a href="">Pesan Sekarang</a href="">
+                        </div>
+                     </div>
+                </div>
+                <div class="value-container">
+                     <img src="Assets/img/gallery-bali/3.jpg" alt="bali">
+                     <div class="padding">
+                        <h1>Bali</h1>
+                        <p>Pantai Sanur, dengan ombaknya yang tenang dan pemandangan matahari terbit yang indah, menjadi favorit bagi keluarga dan wisatawan yang mencari suasana santai. Di sini, pengunjung dapat menikmati bersepeda di sepanjang jalan setapak <a href="Pages/bali/">...Lebih lanjut</a></p>
+                        <div>
+                            <h1>Rp 2.000.000</h1>
+                            <a href="">Pesan Sekarang</a href="">
+                            </div>
+                     </div>
+                </div>
+                <div class="value-container">
+                     <img src="Assets/img/gallery-yogyakarta/4.jpg" alt="Yogyakarta">
+                     <div class="padding">
+                        <h1>Yogyakarta</h1>
+                        <p>Jalan Malioboro, pusat keramaian dan ikon pariwisata Yogyakarta, menawarkan pengalaman yang tak terlupakan bagi setiap pengunjung. Di sepanjang jalan ini, wisatawan dapat menemukan berbagai toko dan pedagang kaki lima yang menjual beragam oleh-oleh khas <a href="Pages/yogyakarta/">...Lebih lanjut</a></p>
+                        <div>
+                            <h1>Rp 2.000.000</h1>
+                            <a href="">Pesan Sekarang</a href="">
+                            </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1>Our Contact</h1>
+        <div class="contact" id="contact">
+            <a href="https://www.instagram.com/TripCecepy/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="https://wa.me/1234567890"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+            <a href="https://mail.google.com/mail/u/0/?fs=1&to=hello@TripCantikCecepy.com&body=Halo+saya+ingin+berbicara+langsung+dengan+admin&tf=cm"><i class="fa-regular fa-envelope fa-xl"></i></a>
+            <a href="https://www.google.com/maps/place/Jl.Phh.Mustopha+No.26+Bandung/@-6.8981072,107.63061,17z/data=!3m1!4b1!4m6!3m5!1s0x2e68e7baee821dab:0x3b306bdeb1f6fc09!8m2!3d-6.8981125!4d107.6352234!16s%2Fg%2F11f9j121g9?entry=ttu" class="imgc"><i class="fa-solid fa-location-dot fa-lg"></i></a>
+        </div>
+        <hr>
+        <p>© Copyright 2024-2026. All Right Reversed</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/cc079fac56.js" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener("scroll", function(){
+            var nav_con = document.getElementById("nav-con");
+            var a = document.getElementById("a-menu");
+            var nav = document.querySelector("nav");
+            var drop = document.getElementById("drop");
+            nav_con.classList.toggle("sticky", window.scrollY > 0);
+            nav.classList.toggle("nav-sticky", window.scrollY > 0);
+            drop.classList.toggle("stick-drop", window.scrollY > 0);
+            a.classList.toggle("a-sticky", window.scrollY > 0);
+        });
+        var bar = document.getElementById("bar");
+        function barOP(){
+            bar.classList.add("barOP");
+        }
+        function barCP(){
+            bar.classList.remove("barOP")
+        }
+    </script>
+</body>
+</html>

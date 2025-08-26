@@ -12,6 +12,7 @@ Its main purpose is to provide a space for hosting web content.
 
 ## 🌐 Project Links
 - [Repository on GitHub](https://github.com/RendyPakeY/CecepyTour)
+- [Demo](https://rendypakey.github.io/CecepyTour/)
 
 ## 🤝 Contributing
 Feel free to fork the repository and submit pull requests. Issues and suggestions are welcome!
